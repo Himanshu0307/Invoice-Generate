@@ -1,0 +1,58 @@
+
+@media print {
+  @page{
+    size: A4;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+
+
+
+}
+  thead { display:table-header-group }
+
+
+
+
+
+  #mainBody{
+    top: 19%;
+    position: absolute;
+    bottom: 20%;
+    /* display: inline-block; */
+    height:  65%;
+    page-break-inside: auto;
+    /* flex-grow: 1; */
+    /* break-inside: auto; */
+    /* overflow: auto; */
+    page-break-after: always;
+  }
+  #downCal{
+    page-break-inside: avoid;
+  }
+
+
+  /* #main{
+    display:flex;
+    flex-direction: row;
+  } */
+
+
+
+#downCal div:nth-child(even) {
+  text-align: right;
+}
+
+#downCal div:nthlast-child {
+  text-align: right;
+}
+
+
+th,td{
+    padding: 4px;
+    text-align: center;
+}
+th{
+    border: 1px solid #ddd;
+}
